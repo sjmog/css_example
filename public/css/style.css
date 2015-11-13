@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  color: #444;
+  background-color: #f0f0f0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: Georgia, Caslon, Times, serif;
+}
+
+p, li {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+header {
+  background-color: #555;
+  padding: 40px 0;
+}
+
+header > * {
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.brand {
+  position: absolute;
+  width: 115px;
+  height: 115px;
+  left: 40px;
+  background-image: url("../images/me.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.brand:after {
+  content: "Sup!";
+  position: absolute;
+  font-style: italic;
+  width: 70px;
+  height: 70px;
+  right: -40px;
+  background: #f0f0f0;
+  color: #444;
+  line-height: 70px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 100%;
+  display: none;
+}
+
+.brand:hover:after {
+  display: block;
+}
+
+header > h1 {
+  letter-spacing: 3px;
+}
+
+header > aside {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  top: -20px;
+  position: relative;
+  font-weight: 800;
+}
+
+main {
+  max-width: 580px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
